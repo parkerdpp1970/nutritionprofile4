@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Case Study - Julie Jones</title>
+    <style>
+        :root {
+            --primary-color: #9b59b6;
+            --accent-color: #e91e63;
+            --secondary-color: #8e44ad;
+            --bg-light: #fdfcfe;
+            --text-dark: #2c3e50;
+            --border-color: #eee;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-dark); background-color: var(--bg-light); padding-bottom: 50px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; padding: 30px 0; text-align: center; margin-bottom: 30px; border-radius: 10px; }
+        header h1 { font-size: 2.5em; }
+        .profile-section { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 30px; display: grid; grid-template-columns: 220px 1fr; gap: 30px; align-items: start; }
+        .profile-image { width: 220px; height: 220px; border-radius: 10px; object-fit: cover; border: 4px solid var(--accent-color); background-color: #f5f0f8; }
+        .profile-details h2 { color: var(--primary-color); margin-bottom: 15px; font-size: 1.8em; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
+        .info-item { background: #fdfcfe; padding: 12px; border-radius: 5px; border-left: 4px solid var(--accent-color); }
+        .info-item strong { color: var(--primary-color); display: block; margin-bottom: 5px; }
+        .section { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        .section h2 { color: var(--primary-color); margin-bottom: 20px; padding-bottom: 10px; border-bottom: 3px solid var(--accent-color); font-size: 1.8em; }
+        .section h3 { color: var(--secondary-color); margin-top: 25px; margin-bottom: 15px; font-size: 1.4em; background: #fdfcfe; padding: 8px 15px; border-radius: 5px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 30px; }
+        table thead { background: var(--primary-color); color: white; }
+        table th { padding: 12px; text-align: left; font-weight: 600; }
+        table td { padding: 12px; border-bottom: 1px solid var(--border-color); vertical-align: top; }
+        .day-header { background-color: #f8f9fa; font-weight: bold; color: var(--primary-color); text-transform: uppercase; border-left: 4px solid var(--accent-color); }
+        .highlight { background: #fff3cd; padding: 15px; border-left: 4px solid #ffc107; border-radius: 5px; margin: 15px 0; }
+        @media (max-width: 768px) { .profile-section { grid-template-columns: 1fr; text-align: center; } .profile-image { margin: 0 auto; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nutrition Case Study</h1>
+        </header>
+
+        <div class="profile-section">
+            <img src="https://res.cloudinary.com/dlshlye2v/image/upload/v1766471453/Julie_krijs0.jpg" alt="Julie Jones Profile" class="profile-image">
+            <div class="profile-details">
+                <h2>Julie Jones</h2>
+                <div class="info-grid">
+                    <div class="info-item"><strong>Age:</strong><span>29 years old</span></div>
+                    <div class="info-item"><strong>Occupation:</strong><span>Part-time Administrator</span></div>
+                    <div class="info-item"><strong>Location:</strong><span>UK</span></div>
+                    <div class="info-item"><strong>Family:</strong><span>Mother of two (Zak & Sofia)</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Background</h2>
+            <p>Julie is a 29-year-old mother who manages a busy household while working part-time. Dropping her children at school and heading to work leaves her with little time for self-care. She has gained weight in recent years, which has significantly impacted her self-image and confidence.</p>
+        </div>
+
+        <div class="section">
+            <h2>Dietary Habits & Lifestyle</h2>
+            <h3>Current Eating Patterns:</h3>
+            <ul>
+                <li>Prefers quick and simple meals.</li>
+                <li>Has a sweet and savoury palate, leading to frequent snack consumption.</li>
+                <li>Uses coffee with milk as a primary fluid source throughout the day.</li>
+            </ul>
+            <h3>Challenges:</h3>
+            <ul>
+                <li>Highly demanding schedule balancing work and motherhood.</li>
+                <li>Husband often works long hours to support the family.</li>
+                <li>Generally disorganised with poor time management.</li>
+                <li>Low energy levels due to weight and irregular activity.</li>
+                <li>New to the gym environment with no sports background.</li>
+                <li>Low confidence level in her ability.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Health & Wellness</h2>
+            <div class="info-grid">
+                <div class="info-item"><strong>Height:</strong><span>1.65 m</span></div>
+                <div class="info-item"><strong>Current Weight:</strong><span>80 kg</span></div>
+                <div class="info-item"><strong>Physical Activity:</strong><span>Beginner Gym Goer</span></div>
+                <div class="info-item"><strong>Stress Level:</strong><span>High</span></div>
+                <div class="info-item"><strong>Goal Weight:</strong><span>65 kg</span></div>
+            </div>
+            <div class="highlight">
+                <strong>Main Goal:</strong> Julie's goal is a physical transformation through a focused fitness regimen. She wants to lose 15 kg and regain a sense of order, control, and self-confidence.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3-Day Food Diary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 15%;">Time</th>
+                        <th style="width: 60%;">Food/Drink</th>
+                        <th style="width: 25%;">Portion Size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="day-header"><td colspan="3">Day 1</td></tr>
+                    <tr>
+                        <td>10:30 am</td>
+                        <td>Chocolate croissant<br>Filter coffee (with milk and 1 tsp sugar)</td>
+                        <td>1 piece<br>240ml</td>
+                    </tr>
+                    <tr>
+                        <td>12:30 pm</td>
+                        <td>Ham and cheese sandwich (white bread)<br>French fries<br>Coke Zero</td>
+                        <td>85g ham<br>140g<br>355ml</td>
+                    </tr>
+                    <tr>
+                        <td>4:30 pm</td>
+                        <td>Filter coffee (with milk and 1 tsp sugar)<br>Strawberries</td>
+                        <td>230ml<br>Handful</td>
+                    </tr>
+                    <tr>
+                        <td>7:45 pm</td>
+                        <td>Homemade lasagne<br>Garlic bread<br>Small salad (mixed greens/tomatoes)<br>Water</td>
+                        <td>225g (large serving)<br>50g (2 slices)<br>1 cup<br>230ml</td>
+                    </tr>
+                    <tr>
+                        <td>10:30 pm</td>
+                        <td>Filter coffee (with milk and 1 tsp sugar)<br>Milk chocolate cookies</td>
+                        <td>230ml<br>215g (5 pack)</td>
+                    </tr>
+
+                    <tr class="day-header"><td colspan="3">Day 2</td></tr>
+                    <tr>
+                        <td>11:00 am</td>
+                        <td>Dairy milk chocolate bar<br>Coke Zero</td>
+                        <td>110g<br>355ml</td>
+                    </tr>
+                    <tr>
+                        <td>12:30 pm</td>
+                        <td>Tesco Coronation Chicken Sandwich<br>Cheese and Onion Crisps<br>Apple<br>Coke Zero</td>
+                        <td>1 pack<br>25g<br>180g<br>355ml</td>
+                    </tr>
+                    <tr>
+                        <td>4:30 pm</td>
+                        <td>Filter coffee (with milk and 1 tsp sugar)<br>Ready salted crisps</td>
+                        <td>230ml<br>25g</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 pm</td>
+                        <td>Pork chops<br>Mashed potato<br>Peas<br>Brown gravy<br>Water</td>
+                        <td>220g<br>320g (1.2 cups)<br>53g (1/3 cup)<br>120ml (1/2 cup)<br>230ml</td>
+                    </tr>
+                    <tr>
+                        <td>9:30 pm</td>
+                        <td>Milk chocolate cookies<br>Rosé wine</td>
+                        <td>215g (5 pack)<br>150ml</td>
+                    </tr>
+
+                    <tr class="day-header"><td colspan="3">Day 3</td></tr>
+                    <tr>
+                        <td>10:45 am</td>
+                        <td>Vanilla yogurt with granola<br>Filter coffee (with milk and 1 tsp sugar)<br>Digestive biscuits</td>
+                        <td>240ml<br>230ml<br>30g (2 biscuits)</td>
+                    </tr>
+                    <tr>
+                        <td>1:00 pm</td>
+                        <td>Tesco Chicken Caesar Wrap<br>Salt & Vinegar Crisps<br>Diet Pepsi</td>
+                        <td>240g (1 pack)<br>40g<br>355ml</td>
+                    </tr>
+                    <tr>
+                        <td>4:15 pm</td>
+                        <td>Filter coffee (with milk and 1 tsp sugar)<br>Kit Kat<br>Small banana</td>
+                        <td>230ml<br>45g (1 standard bar)<br>80g</td>
+                    </tr>
+                    <tr>
+                        <td>7:15 pm</td>
+                        <td>Spaghetti Bolognese<br>Garlic bread<br>Mixed salad (olive oil dressing)<br>Water</td>
+                        <td>350g<br>75g (3 slices)<br>1 cup<br>230ml</td>
+                    </tr>
+                    <tr>
+                        <td>9:45 pm</td>
+                        <td>Dairy milk chocolate<br>Rosé wine</td>
+                        <td>45g<br>175ml</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
